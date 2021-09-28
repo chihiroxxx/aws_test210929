@@ -1,0 +1,88 @@
+version: 2.1
+orbs:
+  aws-ecr: circleci/aws-ecr@7.2.0
+  aws-ecs: circleci/aws-ecs@2.2.1
+
+# jobs:
+#   build:
+#     docker:
+#       - image: circleci/ruby:2.6.5
+#     working_directory: ~/backRakuten
+#     # executor: ruby/default
+#     steps:
+#       - checkout:
+#           path: ~/backRakuten
+#       # - run:
+#       #     name: Which bundler?
+#       #     command: bundle -v
+#       # - ruby/bundle-install
+#       - ruby/install-deps
+#   test:
+#     docker:
+#       - image: circleci/ruby:2.6.5
+#       - image: circleci/mysql:5.7.25
+#         environment:
+#           MYSQL_DATABASE: backRakuten_test
+#           MYSQL_USER: root
+#           MYSQL_ROOT_PASSWORD: password
+#     environment:
+#       BUNDLE_JOBS: "3"
+#       BUNDLE_RETRY: "3"
+#       APP_DATABASE_HOST: 127.0.0.1
+#       RAILS_ENV: test
+#     working_directory: ~/backRakuten
+#     steps:
+#       - checkout:
+#           path: ~/backRakuten
+#       - ruby/install-deps
+#       - run:
+#           name: Database setup
+#           command: bundle exec rails db:migrate
+#       # - run:
+#       # name: test rspec
+#       # - ruby/rspec-test
+#       - run:
+#           name: User Model test
+#           command: bundle exec rspec spec/models/user_spec.rb
+#       - run:
+#           name: Book Model test
+#           command: bundle exec rspec spec/models/book_spec.rb
+#       - run:
+#           name: API Requests test
+#           command: bundle exec rspec spec/requests/api/v1/books_spec.rb
+
+workflows:
+  build_deploy_to_fargate:
+    jobs:
+      - aws-ecr/build-and-push-image:
+          # executor: docker_build
+          # name: "ecr_building"
+          # circleciの環境変数？？？どこで設定するんだ？？
+          account-url: AWS_ECR_ACCOUNT_URL_ENV_VAR_NAME
+          aws-access-key-id: ACCESS_KEY_ID_ENV_VAR_NAME
+          aws-secret-access-key: SECRET_ACCESS_KEY_ENV_VAR_NAME
+          region: AWS_REGION_ENV_VAR_NAME
+          repo: memento_backend_golang # ECRのリポジトリ名 ここ環境変数にしたいな
+          tag: latest # プッシュコマンドのタグでしょ？いつもの
+          path: ./ # pathToMyDockerfile
+          dockerfile: Dockerfile # myDockerfile
+          # requires:
+          #   - test
+          filters:
+            branches:
+              only: main
+      - aws-ecs/deploy-service-update:
+          aws-access-key-id: ACCESS_KEY_ID_ENV_VAR_NAME
+          aws-secret-access-key: SECRET_ACCESS_KEY_ENV_VAR_NAME
+          aws-region: AWS_DEFAULT_REGION
+          cluster-name: teddytime # クラスター名
+          family: teddytime_api # タスク定義のファミリーのところ
+          service-name: teddytime_api # サービス名
+          container-image-name-updates: "container=memento_backend_golang,image-and-tag=${AWS_ECR_ACCOUNT_URL_ENV_VAR_NAME}/memento_backend_golang:latest"
+          # いつものpush commandか！！
+          # "container=${MY_APP_PREFIX}-service,tag=${CIRCLE_SHA1}"
+          requires:
+            - aws-ecr/build-and-push-image
+          filters:
+            branches:
+              only: main
