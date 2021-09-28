@@ -1,0 +1,7 @@
+.env
+/old
+/auth
+
+public.key
+secret.key
+/.vscode

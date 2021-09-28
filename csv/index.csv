@@ -1,0 +1,20 @@
+No,BookTitle,Author,BookImage,Idea,Date,CreatedAt,UpdatedAt
+1,React入門 React・Reduxの導入からサーバサイドレンダリングによるUXの向上まで,穴井宏幸,http://books.google.com/books/content?id=SuFLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,だれっだってえ、aaaaMYSQL変数かか。。。。,2021-09-22 20:23:00,2021-09-22 20:23:16,2021-09-22 20:23:16
+2,React環境構築の教科書,井手 優太,http://books.google.com/books/content?id=VSv3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,複数bookでも大丈夫だろうか？？？あれ...,2021-09-16 20:25:00,2021-09-22 20:25:29,2021-09-22 20:25:29
+3,入門React,フランキー バグナルディ,http://books.google.com/books/content?id=mRlbrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api,ん？？？できてる？？uuuuuむ,2021-09-09 20:31:00,2021-09-22 20:31:45,2021-09-22 20:31:45
+4,入門React,フランキー バグナルディ,http://books.google.com/books/content?id=mRlbrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api,よし、chartが少しずつ形になってきた！！,2021-09-23 09:27:00,2021-09-22 20:31:45,2021-09-22 20:31:45
+5,実践Rustﾌﾟﾛｸﾞﾗﾐﾝｸﾞ入門,初田直也,http://books.google.com/books/content?id=zTcEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,むむ...,2021-09-23 15:31:00,2021-09-23 15:31:19,2021-09-23 15:31:19
+6,プログラミング言語Rust 公式ガイド,スティーブ クラブニック,https://cdn.store-tsutaya.tsite.jp/images/jacket/13973/9784048930703_1L.jpg,rustくん...,2021-08-30 15:41:00,2021-09-23 15:41:39,2021-09-23 15:41:39
+7,実践Rust入門言語仕様から開発手法まで,keen,http://books.google.com/books/content?id=e-ZgxQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api,なんでだろ...,2021-08-30 15:45:00,2021-09-23 15:45:35,2021-09-23 15:45:35
+8,東大の先生！文系の私に超わかりやすく高校の数学を教えてください！,西成　活裕,https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5013/9784761275013.jpg?_ex=200x200,これはチャージだよねえ！,2021-09-23 19:47:00,2021-09-23 19:47:50,2021-09-23 19:47:50
+9,東大の先生！超わかりやすくビジネスに効くアートを教えてください！,三浦　俊彦,https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4894/9784761274894.jpg?_ex=200x200,気になるうう！！,2021-09-23 19:51:00,2021-09-23 19:51:40,2021-09-23 19:51:40
+10,React入門 React・Reduxの導入からサーバサイドレンダリングによるUXの向上まで,穴井宏幸,http://books.google.com/books/content?id=SuFLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,右をおおおおおおお,2021-09-24 07:59:00,2021-09-22 20:23:16,2021-09-22 20:23:16
+11,入門React,フランキー バグナルディ,http://books.google.com/books/content?id=mRlbrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api,うおおおおおおおお,2021-09-24 07:59:00,2021-09-22 20:31:45,2021-09-22 20:31:45
+12,基礎から学ぶ React/React Hooks,asakohattori,https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3591/9784863543591_1_3.jpg?_ex=200x200,おおおおおおお,2021-09-24 07:59:00,2021-09-24 07:59:59,2021-09-24 07:59:59
+13,React入門 React・Reduxの導入からサーバサイドレンダリングによるUXの向上まで,穴井宏幸,http://books.google.com/books/content?id=SuFLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,oooooo,2021-09-24 08:01:00,2021-09-22 20:23:16,2021-09-22 20:23:16
+14,プログラミング言語Rust 公式ガイド,スティーブ クラブニック,https://cdn.store-tsutaya.tsite.jp/images/jacket/13973/9784048930703_1L.jpg,かわいいい,2021-09-24 08:02:00,2021-09-23 15:41:39,2021-09-23 15:41:39
+15,プログラミング言語Rust 公式ガイド,スティーブ クラブニック,https://cdn.store-tsutaya.tsite.jp/images/jacket/13973/9784048930703_1L.jpg,あれ,2021-09-24 08:02:00,2021-09-23 15:41:39,2021-09-23 15:41:39
+16,プログラミング言語Rust 公式ガイド,スティーブ クラブニック,https://cdn.store-tsutaya.tsite.jp/images/jacket/13973/9784048930703_1L.jpg,"あページ数の編集はいらないか....
+なぜなら...都度都度、indexに記録して欲しいから！",2021-09-24 08:03:00,2021-09-23 15:41:39,2021-09-23 15:41:39
+17,React環境構築の教科書,井手 優太,http://books.google.com/books/content?id=VSv3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api,"ん？？？lengthって-1するの？？直した
+！！！-1しないよ！",2021-09-24 08:17:00,2021-09-22 20:25:29,2021-09-22 20:25:29
