@@ -33,8 +33,8 @@ func main() {
 	// e.POST("/api/v1/logout", web.UserLogout) //単純にReactでtoken削除するか...
 
 	// scraping関係
-	e.GET("/api/go/books/kino", scraping.Kino)
-	e.GET("/api/go/books/tsutaya", scraping.Tsutaya)
+	e.GET("/api/v1/kino", scraping.Kino)
+	e.GET("/api/v1/tsutaya", scraping.Tsutaya)
 
 	// e.POST("/api/v1/login/check", web.CheckAuth)
 

@@ -78,7 +78,7 @@ workflows:
           cluster-name: teddytime # クラスター名
           family: teddytime_api # タスク定義のファミリーのところ
           service-name: teddytime_api # サービス名
-          container-image-name-updates: "container=memento_backend_golang,image-and-tag=${AWS_ECR_ACCOUNT_URL_ENV_VAR_NAME}/memento_backend_golang:latest"
+          container-image-name-updates: "container=memento_backend_golang_only,image-and-tag=${AWS_ECR_ACCOUNT_URL_ENV_VAR_NAME}/memento_backend_golang:latest"
           # いつものpush commandか！！
           # "container=${MY_APP_PREFIX}-service,tag=${CIRCLE_SHA1}"
           requires:
